@@ -14,16 +14,14 @@
         var app = new PIXI.Application(800, 600, {backgroundColor : 0x1099bb}); //랜더링 창
         document.body.appendChild(app.view);
         
-        var bunny = PIXI.Sprite.fromImage('kor_14.jpeg') //이미지 가져오기
+        var bunny = PIXI.Sprite.fromImage('test.png') //이미지 가져오기
         bunny.anchor.set(0.5); //이미지는 bunny 객체 세팅을 하는데 중앙 중심점을 기준
         bunny.x = app.screen.width / 2;
         bunny.y = app.screen.height / 2;
         
         app.stage.addChild(bunny);
         
-        app.ticker.add(function(delta) { //회전
-            bunny.rotation -= 0.01 * delta;
-        });
+       
         </script>
         </body>
     
