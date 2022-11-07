@@ -47,7 +47,7 @@ class PlayScreen extends me.Stage {
 export default function onload() {
 
     // Initialize the video.
-    if (!me.video.init(1400, 1600, {parent : "screen", scaleMethod : "flex", renderer : me.video.WEBGL})) {
+    if (!me.video.init(800, 600, {parent : "screen", scaleMethod : "flex", renderer : me.video.WEBGL})) {
         alert("Your browser does not support HTML5 canvas.");
         return;
     }
